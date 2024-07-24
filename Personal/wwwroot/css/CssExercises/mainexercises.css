@@ -1,0 +1,224 @@
+:root {
+    --cor-verde-menta: #05ee15;
+    --cor-preto: #000 ;
+    --cor-branca: #fff;
+    --cor-cinza: #808080;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    /*o que fica abaixo da barra*/
+    background: var(--cor-preto);
+}
+
+html::-webkit-scrollbar-thumb {
+    /*cor da barra*/
+    background: var(--cor-verde-menta);
+}
+
+body {
+    background: var(--cor-preto);
+}
+
+section {
+    padding: 5rem 9%;
+}
+
+/*Cabeçalho das sessões*/
+.heading {
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+}
+.heading::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: .1rem;
+    width: 100%;
+    background: var(--cor-cinza);
+    z-index: -1;
+}
+.heading span {
+    font-size: 3rem;
+    color: var(--cor-verde-menta);
+    background: var(--cor-preto);
+    padding: .5rem 1.5rem;
+    border: 0.1rem solid var(--cor-cinza);
+    border-radius: .5rem;
+}
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    padding-right: 3rem;
+    background: linear-gradient(130deg, var(--cor-verde-menta) 93%, 
+    transparent 90%);
+    color: var(--cor-branca);
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 9%;
+    z-index: 10000;
+    background: var(--cor-preto);
+}
+.header .logo {
+    font-weight: bolder;
+    color: var(--cor-branca);
+    font-size: 3rem;
+}
+.header .logo span {
+    color: var(--cor-verde-menta);
+}
+
+.logoz{
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.LogoVitor{
+    width: 100px;
+    height:100px;
+}
+.header .navbar a {
+    display: inline-block;
+    padding: 1.5rem 2rem;
+    font-size: 1.7rem;
+    color: var(--cor-branca);
+}
+.header .navbar a:hover {
+    background: var(--cor-verde-menta);
+}
+
+
+.about {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8rem;
+}
+
+.about .image {
+    flex: 1 1 42rem;
+    position: relative;
+    box-shadow: 0px 5px 15px var(--cor-verde-menta);
+}
+
+.about .image::before {
+    top: 0;
+    left: 0;
+}
+
+.about .image::after {
+    bottom: 0;
+    right: 0;
+}
+.about .image img {
+    width: 100%;
+    padding: 2rem;
+    filter: drop-shadow var(--cor-verde-menta);
+}
+
+.about .content {
+    flex: 1 1 42rem;
+}
+.about .content span {
+    font-size: 2rem;
+    color: var(--cor-verde-menta);
+}
+
+.about .content .title {
+    font-size: 4rem;
+    color: #fff;
+    margin-top: .5rem;
+}
+.about .content p {
+    font-size: 1.5rem;
+    color: var(--cor-cinza);
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+.about .content .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+.about .content .box-container .box {
+    flex: 1 1 20rem;
+}
+
+.about .content .box-container .box h3 {
+    font-size: 2rem;
+    color: var(--cor-branca);
+}
+
+.about .content .box-container .box h3 i {
+    padding-right: 1.5rem;
+    color: var(--cor-verde-menta);
+}
+
+
+#menu-btn {
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+.exercises .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+  
+  .exercises .box {
+    width: 300px;
+    height: 300px;
+    background-color: var(--cor-branca);
+    margin: 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px var(--cor-verde-menta);
+  }
+  
+  .exercises .box img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 15px;
+  }
+  
+  .exercises .box p {
+    margin: 1px 0;
+    font-size: 20px;
+    color: var(--cor-preto);
+    font-weight: bold;
+    box-shadow: 0px 0px 5px var(--cor-verde-menta);
+    background-color: var(--cor-branca);
+    border-radius: 0px 0px 10px 10px;
+}
+  

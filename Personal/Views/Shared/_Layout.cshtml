@@ -4,46 +4,74 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Personal</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Personal.styles.css" asp-append-version="true" />
+    <link rel='stylesheet' href='~/css/CssHome/mainhome-page.css'>
+    <link rel="stylesheet" href="~/css/CssHome/resethome-page.css">
+    <link rel="stylesheet" href="~/css/CssHome/responsivehome-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="~/img/icons/logo.png" type="image/x-icon">
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Personal</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
+    <header class="header">
+        <div class="logoz">
+            <img src="~/img/icons/logo.png" class="LogoVitor">
+            <a href="indexhome-page.html" class="logo"><span>PERSONAL</span>VITOR</a>
+        </div>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="#home">Início</a>
+            <a href="#about">Sobre</a>
+            <a href="#features">Exercícios</a>
+            <a href="#trainers">Redes Sociais</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+        @RenderBody()
+    </main>
+
+    <footer class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Links rápidos</h3>
+                <a class="links" href="#home">Início</a>
+                <a class="links" href="#about">Sobre</a>
+                <a class="links" href="#exercises">Exercícios</a>
+                <a class="links" href="#trainers">Treinadores</a>
+            </div>
+
+            <div class="box">
+                <h3>Nossos Contatos</h3>
+                <p> <i class="fas fa-phone"></i> +14 9999-9999 </p>
+                <p> <i class="fas fa-envelope"></i> vitorwerenreoioli@gmail.com </p>
+                <p> <i class="fas fa-map"></i> Barra Bonita, Brazil</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="https://www.instagram.com/guibis_17/" class="fab fa-instagram "></a>
+                    <a href="https://www.tiktok.com/juliadelfinojd/" class="fab fa-tiktok"></a>
                 </div>
             </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - Personal - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <div class="box">
+                <h3>Novidades</h3>
+                <p>Se inscreva para receber as novidades</p>
+                <form action="">
+                    <input type="email" name="" class="email" placeholder="digite seu e-mail" id="">
+                    <input type="submit" value="subscribe" class="btn">
+                </form>
+            </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>
