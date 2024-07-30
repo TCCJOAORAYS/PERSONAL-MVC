@@ -1,29 +1,35 @@
-﻿<section id="home" class="home">
+﻿@section Styles {
+    <link rel='stylesheet' href='~/css/CssHome/mainhome.css'>
+    <link rel="stylesheet" href="~/css/CssHome/resethome.css">
+    <link rel="stylesheet" href="~/css/CssHome/responsivehome.css">
+}
+
+<section id="home" class="home">
     <div class="swiper home-slider">
 
         <div class="swiper-wrapper">
 
-            <div class="swiper-slide slide" style="background: url(img/inicio/repeat1.png) no-repeat;">
+            <div class="swiper-slide slide" style="background: url(../img/inicio/repeat1.png) no-repeat;">
                 <div class="content">
                     <span>Se cuide, Treine em casa!</span>
                     <h3>Seja saudável mesmo em casa!</h3>
-                    <a href="#" class="btn">Comece Já</a>
+                    <a href="#" class="btn">Iniciar</a>
                 </div>
             </div>
 
-            <div class="swiper-slide slide" style="background: url(img/inicio/repeat2.png) no-repeat;">
+            <div class="swiper-slide slide" style="background: url(../img/inicio/repeat2.png) no-repeat;">
                 <div class="content">
                     <span>Se cuide, Treine em casa!</span>
                     <h3>Torne-se mais forte do que suas desculpas.</h3>
-                    <a href="#" class="btn">Comece Já</a>
+                    <a href="#" class="btn">Iniciar</a>
                 </div>
             </div>
 
-            <div class="swiper-slide slide" style="background: url(img/inicio/repeat3.png) no-repeat;">
+            <div class="swiper-slide slide" style="background: url(../img/inicio/repeat3.png) no-repeat;">
                 <div class="content">
                     <span>Se cuide, Treine em casa!</span>
                     <h3>Insista, Persista e Supere.</h3>
-                    <a href="#" class="btn">Comece Já</a>
+                    <a href="#" class="btn">Iniciar</a>
                 </div>
             </div>
         </div>
@@ -34,15 +40,15 @@
 
 <section id="about" class="about">
     <div class="image">
-        <img src="img/sobrevitor.png" alt="">
+        <img src="../img/sobrevitor.png" alt="">
     </div>
 
     <div class="content">
         <span>Sobre Vitor</span>
         <h3 class="title">Um novo dia, uma nova oportunidade de melhorar!</h3>
-        <p>Olá! Eu sou o Vitor Werner Oioli e vou te ajudar nesse processo de mudança de vida! Sou Personal Trainer na
-            academia TryHard na cidade de Barra Bonita, estudante do quarto módulo de Educação Física na univesidade
-            GranTietê. </p>
+        <p>Olá! Eu sou o Vitor Werner Oioli e vou te ajudar nesse processo de mudança de vida! Sou Personal
+            Trainer na academia TryHard na cidade de Barra Bonita, estudante do quarto módulo de Educação Física
+            na univesidade GranTietê. </p>
 
         <div class="box-container">
             <div class="box">
@@ -75,10 +81,53 @@
                     <a href="#" class="fab fa-facebook-f"></a>
                     <a href="#" class="fab fa-twitter"></a>
                     <a href="https://www.instagram.com/guibis_17/" class="fab fa-instagram"></a>
-                    <a href="https://www.tiktok.com/juliadelfinojd/" class="fab fa-tiktok"></a>
+                    <a href="https://www.tiktok.com/juliadelfinojd" class="fab fa-tiktok"></a>
                 </div>
             </div>
         </div>
+</section>
+
+<section id="features" class="features">
+    <h1 class="heading"> <span>Testes Rápidos</span> </h1>
+
+    <div class="box-container">
+        <div class="box">
+            <div class="image">
+                <img src="../Assets/Images/exercicios/alongamento.jpg" alt="">
+            </div>
+            <div class="content">
+                <img src="../Assets/Images/alongamentoicone.png" alt="">
+                <h3>Teste de Freeman-Romberg</h3>
+                <p>Primeiro teste rápido</p>
+                <a href="../Quick/Index.cshtml" class="btn">Saiba mais</a>
+            </div>
+        </div>
+
+        <div class="box second">
+            <div class="image">
+                <img src="../Assets/Images/exercicios/massamuscular.jpg" alt="">
+            </div>
+            <div class="content">
+                <img src="../Assets/Images/musculacaoicone.png" alt="">
+                <h3>Teste de Tug</h3>
+                <p>Segundo teste rápido</p>
+                <a href="../Quick/Index.cshtml" class="btn">Saiba mais</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="../Assets/Images/exercicios/doreslocais.jpg" alt="">
+            </div>
+            <div class="content">
+                <img src="../Assets/Images/doricone.png" alt="">
+                <h3>Agilidade e Equilíbrio Dinâmico</h3>
+                <p>Terceiro teste rápido</p>
+                <a href="../Quick/Index.cshtml" class="btn">Saiba mais</a>
+            </div>
+        </div>
+
+    </div>
 </section>
 
 <section id="features" class="features">
@@ -87,43 +136,42 @@
     <div class="box-container">
         <div class="box">
             <div class="image">
-                <img src="img/exercicios/alongamento.jpg" alt="">
+                <img src="../Assets/Images/exercicios/alongamento.jpg" alt="">
             </div>
             <div class="content">
-                <img src="img/alongamentoicone.png" alt="">
+                <img src="../Assets/Images/alongamentoicone.png" alt="">
                 <h3>Alongamentos</h3>
                 <p>Alongamentos essenciais</p>
-                <a href="/Exercises/Index" class="btn">Mais Exercícios</a>
+                <a href="../Exercises/Index.cshtml" class="btn">Mais Exercícios</a>
             </div>
         </div>
 
         <div class="box second">
             <div class="image">
-                <img src="img/exercicios/massamuscular.jpg" alt="">
+                <img src="../Assets/Images/exercicios/massamuscular.jpg" alt="">
             </div>
             <div class="content">
-                <img src="img/musculacaoicone.png" alt="">
+                <img src="../Assets/Images/musculacaoicone.png" alt="">
                 <h3>Equilíbrio</h3>
                 <p>Exercícios de Equilíbrio</p>
-                <a href="/Exercises/Index" class="btn">Mais Exercícios</a>
+                <a href="../Exercises/Index.cshtml" class="btn">Mais Exercícios</a>
             </div>
         </div>
 
         <div class="box">
             <div class="image">
-                <img src="img/exercicios/doreslocais.jpg" alt="">
+                <img src="../Assets/Images/exercicios/doreslocais.jpg" alt="">
             </div>
             <div class="content">
-                <img src="img/doricone.png" alt="">
+                <img src="../Assets/Images/doricone.png" alt="">
                 <h3>Dores Localizadas</h3>
                 <p>Exercícios para dores locais</p>
-                <a href="/Exercises/Index" class="btn">Mais Exercícios</a>
+                <a href="../Exercises/Index.cshtml" class="btn">Mais Exercícios</a>
             </div>
         </div>
 
     </div>
 </section>
-
 <!--------->
 
 <section class="banner">
@@ -145,8 +193,8 @@
 
             <div class="swiper-slide slide">
                 <p>Comecei a seguir os exercícios de alongamento do site e, em poucas semanas, senti uma enorme
-                    diferença na minha flexibilidade. As dores nas costas que me incomodavam há anos praticamente
-                    desapareceram. Recomendo a todos!</p>
+                    diferença na minha flexibilidade. As dores nas costas que me incomodavam há anos
+                    praticamente desapareceram. Recomendo a todos!</p>
                 <div class="user">
                     <img src="https://i.postimg.cc/4xhDF81N/pic-1.png" alt="">
                     <div class="info">
@@ -159,8 +207,8 @@
 
             <div class="swiper-slide slide">
                 <p>Os treinos para ganho de massa muscular são incríveis. Com as orientações detalhadas e vídeos
-                    explicativos, consegui ganhar massa de forma eficiente e segura. O personal trainer realmente sabe o
-                    que faz!</p>
+                    explicativos, consegui ganhar massa de forma eficiente e segura. O personal trainer
+                    realmente sabe o que faz!</p>
                 <div class="user">
                     <img src="https://i.postimg.cc/ry7XCXSY/pic-2.png" alt="">
                     <div class="info">
@@ -185,9 +233,9 @@
             </div>
 
             <div class="swiper-slide slide">
-                <p>Os exercícios de alongamento do site são incríveis! Tenho uma rotina muito corrida e passo muitas
-                    horas sentado. Desde que comecei a seguir os vídeos de alongamento, sinto-me mais flexível e com
-                    menos dores musculares. Recomendo totalmente!</p>
+                <p>Os exercícios de alongamento do site são incríveis! Tenho uma rotina muito corrida e passo
+                    muitas horas sentado. Desde que comecei a seguir os vídeos de alongamento, sinto-me mais
+                    flexível e com menos dores musculares. Recomendo totalmente!</p>
                 <div class="user">
                     <img src="https://i.postimg.cc/8zjv8vFC/pic-4.png" alt="">
                     <div class="info">

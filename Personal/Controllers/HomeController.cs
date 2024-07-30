@@ -18,6 +18,16 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult Quick()
+    {
+        return View();
+    }
+
+    public IActionResult Exercises()
+    {
+        return View();
+    }
+
     public IActionResult Privacy()
     {
         return View();

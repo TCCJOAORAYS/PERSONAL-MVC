@@ -3,13 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Personal</title>
-    <link rel='stylesheet' href='~/css/CssHome/mainhome-page.css'>
-    <link rel="stylesheet" href="~/css/CssHome/resethome-page.css">
-    <link rel="stylesheet" href="~/css/CssHome/responsivehome-page.css">
-    <link rel="stylesheet" href="~/css/CssExercises/mainexercises.css">
-    <link rel="stylesheet" href="~/css/CssExercises/resetexercises.css">
-    <link rel="stylesheet" href="~/css/CssExercises/responsiveexercises.css">
+    <title>Vitor Personal</title>
+    @await RenderSectionAsync("Styles", required: false)    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="shortcut icon" href="~/img/icons/logo.png" type="image/x-icon">
