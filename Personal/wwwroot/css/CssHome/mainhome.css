@@ -433,14 +433,64 @@ section {
     color: var(--cor-branca);
 }
 
-.review .review-slider .slide .user span {
-    color: var(--cor-verde-menta);
-    font-size: 1.5rem;
-}
-
 .review .review-slider .slide .user i {
     font-size: 5rem;
     margin-left: auto;
     margin-right: 2rem;
     color: var(--cor-verde-menta);
 }
+
+.footer .box-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.2rem;
+    color: var(--cor-branca);
+    padding: 1rem 1rem;
+}
+
+.footer .box-container .box .links {
+    width: 1px;
+    font-size: 1.5rem;
+    display: block;
+    color: var(--cor-cinza);
+    padding: 1rem 3rem;
+}
+
+.footer .box-container .box .links:hover {
+    color: var(--cor-verde-menta);
+}
+
+.footer .box-container .box p {
+    font-size: 1.5rem;
+    color: var(--cor-cinza);
+    padding: 1rem 3rem;
+}
+
+.footer .box-container .box p i {
+    padding-right: .5rem;
+    color: var(--cor-verde-menta);
+}
+
+.footer .box-container .box .share {
+    padding: 1rem 3rem;
+}
+
+.footer .box-container .box .share a {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    font-size: 1.7rem;
+    color: var(--cor-branca);
+    border-radius: 50%;
+    margin-right: .5rem;
+    text-align: left;
+}
+
+
+.footer .box-container .box .share a:hover {
+    color: var(--cor-verde-menta);
+}
+

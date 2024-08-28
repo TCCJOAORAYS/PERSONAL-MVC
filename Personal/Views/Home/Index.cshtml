@@ -1,4 +1,6 @@
-﻿@section Styles {
+﻿@model IEnumerable<Personal.Models.Exercise>
+
+@section Styles {
     <link rel='stylesheet' href='~/css/CssHome/mainhome.css'>
     <link rel="stylesheet" href="~/css/site.css">
     <link rel="stylesheet" href="~/css/CssHome/responsivehome.css">
@@ -41,9 +43,6 @@
 <section id="about" class="about">
     <div class="image">
         <img src="../img/sobrevitor.png" alt="">
-        <div class="instagram-icon">
-            <a href="https://www.instagram.com/vitortutta/" target="_blank" class="fab fa-instagram"></a>
-        </div>
     </div>
 
     <div class="content">
@@ -75,47 +74,67 @@
     </div>
 </section>
 <!---->
+<section id="trainers" class="trainers">
+    <div class="box-container">
+        <div class="box">
+            <div class="social-media">
+                <h3>Redes Sociais</h3>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="https://www.instagram.com/guibis_17/" target="_blank" class="fab fa-instagram"></a>
+                    <a href="https://www.tiktok.com/juliadelfinojd" target="_blank" class="fab fa-tiktok"></a>
+                </div>
+            </div>
+        </div>
+</section>
 
 <section id="features" class="features">
     <h1 class="heading"> <span>Testes Rápidos</span> </h1>
-
     <div class="box-container">
-        <div class="box">
-            <div class="image">
-                <img src="../img/exercicios/alongamento.jpg" alt="">
-            </div>
-            <div class="content">
-                <img src="../img/icons/alongamentoicone.png" alt="">
-                <h3>Teste de Freeman-Romberg</h3>
-                <p>Primeiro teste rápido</p>
-                <a asp-action="Quick" class="btn">Saiba mais</a>
-            </div>
-        </div>
-
-        <div class="box second">
-            <div class="image">
-                <img src="../img/exercicios/massamuscular.jpg" alt="">
-            </div>
-            <div class="content">
-                <img src="../img/icons/musculacaoicone.png" alt="">
-                <h3>Teste de Tug</h3>
-                <p>Segundo teste rápido</p>
-                <a href="../Home/Quick.cshtml" class="btn">Saiba mais</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="../img/exercicios/doreslocais.jpg" alt="">
-            </div>
-            <div class="content">
-                <img src="../img/icons/doricone.png" alt="">
-                <h3>Agilidade e Equilíbrio Dinâmico</h3>
-                <p>Terceiro teste rápido</p>
-                <a href="../Home/Quick.cshtml" class="btn">Saiba mais</a>
-            </div>
-        </div>
-
+        @if (Model != null)
+        {
+            @foreach (var item in Model)
+            {
+                @if (item.Id % 2 == 1)
+                {
+                    <div class="box">
+                        <div class="image">
+                            <img src="@Html.DisplayFor(modelItem => item.ImagemAux)" alt="">
+                        </div>
+                        <div class="content">
+                            <img src="@Html.DisplayFor(modelItem => item.Icon)" alt="">
+                            <h3>@Html.DisplayFor(modelItem => item.NomeAux)</h3>
+                            <p>@Html.DisplayFor(modelItem => item.Tipo)</p>
+                            <a asp-action="Exercise" asp-route-id='@item.Id' class="btn">Saiba
+                                mais</a>
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <div class="box second">
+                        <div class="image">
+                            <img src="@Html.DisplayFor(modelItem => item.ImagemAux)" alt="">
+                        </div>
+                        <div class="content">
+                            <img src="@Html.DisplayFor(modelItem => item.Icon)" alt="">
+                            <h3>@Html.DisplayFor(modelItem => item.NomeAux)</h3>
+                            <p>@Html.DisplayFor(modelItem => item.Tipo)</p>
+                            <a asp-action="Exercise" asp-route-id='@item.Id' class="btn">Saiba mais</a>
+                        </div>
+                    </div>
+                }
+            }
+        } 
+      
+  
+    else
+    {
+    <div style="color: white;">
+        <p>nenhum exercicio</p>
+    </div>
+    }
     </div>
 </section>
 
@@ -146,7 +165,6 @@
                     <img src="https://i.postimg.cc/4xhDF81N/pic-1.png" alt="">
                     <div class="info">
                         <h3>João Luiz</h3>
-                        <span>designer</span>
                     </div>
                     <i class="fas fa-quote-left"></i>
                 </div>
@@ -160,7 +178,6 @@
                     <img src="https://i.postimg.cc/ry7XCXSY/pic-2.png" alt="">
                     <div class="info">
                         <h3>Luana</h3>
-                        <span>designer</span>
                     </div>
                     <i class="fas fa-quote-left"></i>
                 </div>
@@ -173,7 +190,6 @@
                     <img src="https://i.postimg.cc/7ZxBSmQW/pic-3.png" alt="">
                     <div class="info">
                         <h3>john deo</h3>
-                        <span>designer</span>
                     </div>
                     <i class="fas fa-quote-left"></i>
                 </div>
@@ -187,7 +203,6 @@
                     <img src="https://i.postimg.cc/8zjv8vFC/pic-4.png" alt="">
                     <div class="info">
                         <h3>Alice</h3>
-                        <span>designer</span>
                     </div>
                     <i class="fas fa-quote-left"></i>
                 </div>
