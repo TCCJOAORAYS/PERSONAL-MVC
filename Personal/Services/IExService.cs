@@ -6,4 +6,5 @@ public interface IExService
     Exercise GetExercises(int Numero);
     ExercicesDto GetExercicesDto();
  
+    
 }
