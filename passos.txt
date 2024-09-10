@@ -3,43 +3,9 @@ Configuarar o GitHub:
 git config --global user.name TCCJOAORAYS
 git config --global user.email tccjaoraysa@gmail.com
 
-
-Criar projeto:
-
-dotnet new mvc -o Cozastore
-
-
-Nuget Gallery
-    Shift + Crtl + P
-        -Pesquisar e instalar:
-            EntityFrameworkCore.Design
-            EntityFrameworkCore.InMemory
-            AspNetCore.IdentityFrameworkCore
-
-
-Criar as classes de dados - Pasta Models
-
-Criar a pasta Data e a classe de Contexto
-
-Criar a ConnectionString no arquivo appsettings.json
-
-Criar o serviço de conexão no arquivo Program.classe
-
-
-Executar no terminal:
-dotnet tool install --global dotnet-aspnet-codegenerator --version 8.0.1
-
-Criar um Controller - CRUD:
-dotnet-aspnet-codegenerator controller -name CoresController -m Cor -dc AppDbContext --relativeFolderPath Controllers -udl
-
-dotnet-aspnet-codegenerator controller -name TamanhosController -m Tamanho -dc AppDbContext --relativeFolderPath Controllers -udl
-
-dotnet-aspnet-codegenerator controller -name CategoriaController -m Categoria -dc AppDbContext --relativeFolderPath Controllers -udl
-
-
-Nuget Gallery
-    Shift + Crtl + P
-        -Pesquisar e instalar:
-        Microsoft.VisualStudio.web.codeGeneration.Design
-        Microsoft.EntityFrameworkCore.Tools
-        Microsoft.EntityFrameworkCore.SqlServer
+  cd Personal
+  dotnet restore
+  dotnet ef migrations add InitialCreate
+  dotnet ef migrations add {nomedoBanco} (se necessário).
+  dotnet ef database update
+  dotnet watch run
