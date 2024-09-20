@@ -18,7 +18,7 @@ public class AppDbSeed
                 Titulo = "Cronometrar Quanto Tempo O Indivíduo Permanece",
                 Descricao = "Um Dos Principais Problemas Associados Ao Envelhecimento Humano É A Redução Da Habilidade Para Controlar A Postura E A Marcha, Podendo Levar À Ocorrência De Quedas, Diminuindo, Assim, A Capacidade Funcional Dos Idosos.",
                 Tipo = "Primeiro Teste Rápido",
-                Imagem = "https://raw.githubusercontent.com/TCCJOAORAYS/IMAGENS/main/img/testes/freeman.png",
+                Imagem = "https://raw.githubusercontent.com/TCCJOAORAYS/IMAGENS/main/img/testes/freemann.png",
                 ImagemAux = "https://raw.githubusercontent.com/TCCJOAORAYS/IMAGENS/main/img/exercicios/alongamento.jpg",
                 Icon = "https://raw.githubusercontent.com/TCCJOAORAYS/IMAGENS/main/img/icons/alongamentoicone.png",
                 Info = ["Sem Oscilar", "Em Apoio Unipodal", "Olhos Fechados", "As Mãos Para Baixo"],
@@ -58,4 +58,5 @@ public class AppDbSeed
         
     }
 }
+
 

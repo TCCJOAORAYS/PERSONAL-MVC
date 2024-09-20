@@ -1,22 +1,22 @@
 :root {
     --cor-verde-menta: #05ee15;
     --cor-verde-bosta: #597c5c;
-    --cor-preto: #000;
+    --cor-preto: #000 ;
     --cor-branca: #fff;
     --cor-cinza: #808080;
-}
+  }
 
 html::-webkit-scrollbar {
     width: 1rem;
 }
 
 html::-webkit-scrollbar-track {
-    /*o que fica abaixo da barra*/ 
+    /*o que fica abaixo da barra*/
     background: #000;
 }
 
 html::-webkit-scrollbar-thumb {
-    /*cor da barra*/ 
+    /*cor da barra*/
     background: var(--cor-verde-menta);
 }
 
@@ -28,12 +28,12 @@ section {
     padding: 5rem 9%;
 }
 
-/*Cabeçalho das sessões*/ .heading {
+/*Cabeçalho das sessões*/
+.heading {
     text-align: center;
     margin-bottom: 3rem;
     position: relative;
 }
-
 .heading::before {
     content: '';
     position: absolute;
@@ -45,7 +45,6 @@ section {
     background: var(--cor-cinza);
     z-index: -1;
 }
-
 .heading span {
     font-size: 3rem;
     color: var(--cor-verde-menta);
@@ -54,19 +53,17 @@ section {
     border: 0.1rem solid var(--cor-cinza);
     border-radius: .5rem;
 }
-
 .btn {
     margin-top: 1rem;
     display: inline-block;
     padding: 1rem 2.8rem;
     padding-right: 3rem;
-    background: linear-gradient(130deg, var(--cor-verde-menta) 93%,
-            transparent 90%);
+    background: linear-gradient(130deg, var(--cor-verde-menta) 93%, 
+    transparent 90%);
     color: var(--cor-branca);
     cursor: pointer;
     font-size: 1.7rem;
 }
-
 .btn:hover {
     transform: scale(1.1);
 }
@@ -83,18 +80,16 @@ section {
     z-index: 10000;
     background: var(--cor-preto);
 }
-
 .header .logo {
     font-weight: bolder;
     color: var(--cor-branca);
     font-size: 3rem;
 }
-
 .header .logo span {
     color: var(--cor-verde-menta);
 }
 
-.logoz {
+.logoz{
     width: 300px;
     height: 100px;
     display: flex;
@@ -103,22 +98,22 @@ section {
     gap: 15px;
 }
 
-.LogoVitor {
+.LogoVitor{
     width: 100px;
-    height: 100px;
+    height:100px;
 }
-
 .header .navbar a {
     display: inline-block;
     padding: 1.5rem 2rem;
     font-size: 1.7rem;
     color: var(--cor-branca);
+    transition: 0.5s ease-in-out;
 }
-
 .header .navbar a:hover {
     background: var(--cor-verde-menta);
+    transition: 0.5s ease-in-out;
+    transform: scale(1.1);
 }
-
 #menu-btn {
     font-size: 3rem;
     color: var(--cor-branca);
@@ -130,7 +125,6 @@ section {
     padding: 0;
     margin-top: 5rem;
 }
-
 .home .slide {
     min-height: 90vh;
     background-size: cover !important;
@@ -149,14 +143,13 @@ section {
     color: var(--cor-verde-menta);
     display: block;
 }
-
 .home .slide .content h3 {
     font-size: 5rem;
     color: var(--cor-branca);
     padding: 1rem 0;
 }
-
-/*class de swipwer para criar as bolinhas*/ .swiper-pagination-bullet {
+/*class de swipwer para criar as bolinhas*/
+.swiper-pagination-bullet {
     height: 2rem;
     width: 2rem;
     background: var(--cor-branca);
@@ -166,7 +159,6 @@ section {
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background: var(--cor-verde-menta);
 }
-
 .about {
     display: flex;
     align-items: center;
@@ -178,7 +170,6 @@ section {
     flex: 1 1 42rem;
     position: relative;
 }
-
 .about .image::before,
 .about .image::after {
     content: '';
@@ -188,7 +179,6 @@ section {
     height: 15rem;
     width: 15rem;
 }
-
 .about .image::before {
     top: 0;
     left: 0;
@@ -198,48 +188,15 @@ section {
     bottom: 0;
     right: 0;
 }
-
 .about .image img {
     width: 100%;
     padding: 2rem;
     filter: drop-shadow var(--cor-verde-menta);
 }
 
-.about .image {
-    position: relative;
-    flex: 1 1 42rem;
-}
-
-.about .instagram-icon {
-    position: absolute;
-    bottom: 10px;
-    /* Ajuste conforme necessário */
-    right: 10px;
-    /* Ajuste conforme necessário */
-    font-size: 5rem;
-    /* Tamanho do ícone */
-}
-
-.about .instagram-icon a {
-    color: var(--cor-branca);
-    background: var(--cor-preto);
-    border-radius: 50%;
-    padding: 1rem;
-    /* Ajuste conforme necessário */
-    display: inline-block;
-    text-align: center;
-}
-
-.about .instagram-icon a:hover {
-    color: var(--cor-verde-menta);
-    background: var(--cor-branca);
-}
-
-
 .about .content {
     flex: 1 1 42rem;
 }
-
 .about .content span {
     font-size: 2rem;
     color: var(--cor-verde-menta);
@@ -250,7 +207,6 @@ section {
     color: #fff;
     margin-top: .5rem;
 }
-
 .about .content p {
     font-size: 1.5rem;
     color: #aaa;
@@ -264,7 +220,6 @@ section {
     gap: 2rem;
     margin-top: 1rem;
 }
-
 .about .content .box-container .box {
     flex: 1 1 20rem;
 }
@@ -278,7 +233,6 @@ section {
     padding-right: 1.5rem;
     color: var(--cor-verde-menta);
 }
-
 .features .box-container {
     display: grid;
     /*Vai cria o auto-fit também tenta 
@@ -287,7 +241,6 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
     gap: 1.5rem;
 }
-
 .features .box-container .box {
     background: var(--cor-preto);
 }
@@ -300,7 +253,6 @@ section {
 .features .box-container .box:hover .image img {
     transform: scale(1.1);
 }
-
 .features .box-container .box .image {
     height: 30rem;
     width: 100%;
@@ -314,7 +266,6 @@ section {
     toda a caixa de conteúdo do elemento*/
     object-fit: cover;
 }
-
 .features .box-container .box .content {
     padding: 2rem;
     text-align: center;
@@ -338,11 +289,55 @@ section {
     padding: 1rem 0;
 }
 
+.trainers .box {
+    height: 10rem;
+    overflow: hidden;
+    position: relative;
+}
+.trainers .box:hover .social-media {
+    transform: translateY(0);
+    transition: 0.5s ease-in-out;
+}
+
+.trainers .box .social-media {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--cor-preto);
+    padding: 2rem;
+    transform: translateY(6.5rem);
+    transition: 0.5s ease-in-out;
+}
+
+.trainers .box .social-media h3 {
+    font-size: 2rem;
+    color: var(--cor-verde-menta);
+    padding-top: .5rem;
+}
+.trainers .box .social-media .share {
+    padding-top: 2rem;
+    margin-top: 1.5rem;
+    border-top: 0.1rem solid var(--cor-cinza);
+}
+
+.trainers .box .social-media .share a {
+    font-size: 2rem;
+    color: var(--cor-branca);
+    margin-right: 1.5rem;
+    transition: 0.3s ease-in-out;
+}
+
+.trainers .box .social-media .share a:hover {
+    color: var(--cor-verde-menta);
+    transition: 0.3s ease-in-out;
+    transform: scale(1.2);
+}
 .banner {
     width: 100%;
     height: 60%;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url(../../img/imagemfundo.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+    url(../../img/imagemfundo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -369,7 +364,6 @@ section {
     color: var(--cor-cinza);
     line-height: 2;
 }
-
 .review {
     display: flex;
     align-items: center;
@@ -380,7 +374,6 @@ section {
 .review .information {
     flex: 1 1 35rem;
 }
-
 .review .information span {
     font-size: 2rem;
     color: var(--cor-verde-menta);
@@ -433,12 +426,18 @@ section {
     color: var(--cor-branca);
 }
 
+.review .review-slider .slide .user span {
+    color: var(--cor-verde-menta);
+    font-size: 1.5rem;
+}
+
 .review .review-slider .slide .user i {
     font-size: 5rem;
     margin-left: auto;
     margin-right: 2rem;
     color: var(--cor-verde-menta);
 }
+
 
 .footer .box-container {
     display: flex;
@@ -484,13 +483,26 @@ section {
     line-height: 4.5rem;
     font-size: 1.7rem;
     color: var(--cor-branca);
+    background: var(--cor-preto);
     border-radius: 50%;
     margin-right: .5rem;
-    text-align: left;
+    text-align: center;
 }
-
 
 .footer .box-container .box .share a:hover {
-    color: var(--cor-verde-menta);
+    background: var(--cor-verde-menta);
 }
 
+.footer .box-container .box form {
+    margin-left: 2rem;
+}
+
+.footer .box-container .box form .email {
+    margin-bottom: 1rem;
+    width: 100%;
+    background: var(--cor-preto);
+    padding: 1.2rem;
+    font-size: 1.5rem;
+    color: var(--cor-branca);
+    text-transform: none;
+}
