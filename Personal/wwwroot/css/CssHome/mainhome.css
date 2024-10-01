@@ -233,6 +233,39 @@ section {
     padding-right: 1.5rem;
     color: var(--cor-verde-menta);
 }
+
+.image {
+    position: relative;
+    display: inline-block; 
+}
+
+.image img {
+    display: block;
+    width: 100%; 
+    height: auto;
+}
+
+.instagram-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 50px; 
+    color: var(--cor-verde-menta);
+    background-color: var(--cor-branca);
+    border-radius: 50px; 
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.instagram-icon:hover {
+    color: var(--cor-preto);
+}
+
+
+
 .features .box-container {
     display: grid;
     /*Vai cria o auto-fit também tenta 
@@ -426,10 +459,6 @@ section {
     color: var(--cor-branca);
 }
 
-.review .review-slider .slide .user span {
-    color: var(--cor-verde-menta);
-    font-size: 1.5rem;
-}
 
 .review .review-slider .slide .user i {
     font-size: 5rem;

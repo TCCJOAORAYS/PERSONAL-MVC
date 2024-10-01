@@ -12,7 +12,7 @@ using Personal.Data;
 namespace Personal.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240816030413_InitialCreate")]
+    [Migration("20241001112410_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -269,7 +269,7 @@ namespace Personal.Migrations
                             Id = 1,
                             Descricao = "Um Dos Principais Problemas Associados Ao Envelhecimento Humano É A Redução Da Habilidade Para Controlar A Postura E A Marcha, Podendo Levar À Ocorrência De Quedas, Diminuindo, Assim, A Capacidade Funcional Dos Idosos.",
                             Icon = "https://raw.githubusercontent.com/TCCJOAORAYS/IMAGENS/main/img/icons/alongamentoicone.png",
-                            Imagem = "https://raw.githubusercontent.com/TCCJOAORAYS/IMAGENS/main/img/testes/freeman.png",
+                            Imagem = "https://raw.githubusercontent.com/TCCJOAORAYS/IMAGENS/main/img/testes/freemann.png",
                             ImagemAux = "https://raw.githubusercontent.com/TCCJOAORAYS/IMAGENS/main/img/exercicios/alongamento.jpg",
                             Info = "[\"Sem Oscilar\",\"Em Apoio Unipodal\",\"Olhos Fechados\",\"As M\\u00E3os Para Baixo\"]",
                             Nome = "Teste de Freeman-Romberg Apoio Unipodal Com Olhos Fechados",
