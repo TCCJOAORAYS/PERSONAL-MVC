@@ -498,10 +498,11 @@ section {
 }
 
 .footer .box-container .box p i {
-    padding-right: .5rem;
-    color: var(--cor-verde-menta);
+    padding-right: .5rem; /* Espaço entre o ícone e o texto */
+    color: var(--cor-verde-menta); /* Cor do ícone */
 }
 
+/* Remova ou ajuste a padding se necessário */
 .footer .box-container .box .share {
     padding: 1rem 3rem;
 }
@@ -520,18 +521,4 @@ section {
 
 .footer .box-container .box .share a:hover {
     background: var(--cor-verde-menta);
-}
-
-.footer .box-container .box form {
-    margin-left: 2rem;
-}
-
-.footer .box-container .box form .email {
-    margin-bottom: 1rem;
-    width: 100%;
-    background: var(--cor-preto);
-    padding: 1.2rem;
-    font-size: 1.5rem;
-    color: var(--cor-branca);
-    text-transform: none;
 }
