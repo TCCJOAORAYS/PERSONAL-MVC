@@ -12,8 +12,8 @@ using Personal.Data;
 namespace Personal.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241001112410_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20241002133546_IntialCreate")]
+    partial class IntialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
