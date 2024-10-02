@@ -11,8 +11,9 @@ public class AppDbContext : IdentityDbContext
     {
     }
     public DbSet<Exercise> Exercises { get; set; }
+    public IEnumerable<object> Usuarios { get; internal set; }
 
-     protected override void OnModelCreating(ModelBuilder builder){
+    protected override void OnModelCreating(ModelBuilder builder){
        base.OnModelCreating(builder);
         new AppDbSeed(builder);
     }
