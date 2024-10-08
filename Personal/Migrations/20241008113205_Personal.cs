@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Personal.Migrations
 {
     /// <inheritdoc />
-    public partial class IntialCreate : Migration
+    public partial class Personal : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
