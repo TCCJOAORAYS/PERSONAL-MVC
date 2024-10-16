@@ -467,6 +467,20 @@ section {
     color: var(--cor-verde-menta);
 }
 
+.line {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & hr {
+        width: 70%;
+        height: .5px;
+        background-color: var(--cor-cinza);
+    }
+}
+
 .contact {
     background-color: var(--cor-preto); /* Cor de fundo */
     color: var(--cor-branca); /* Cor do texto */
@@ -478,35 +492,42 @@ section {
     display: flex; /* Flexbox para layout */
     justify-content: space-between; /* Espaço entre os itens */
     align-items: center; /* Alinhamento vertical */
+    gap: 75px;
     max-width: 1200px; /* Largura máxima */
     margin: 0 auto; /* Centraliza a seção */
 }
 
 .contact .text {
     flex: 1; /* Flexível */
+    text-align: start;
     padding-right: 2rem; /* Espaçamento à direita */
 }
 
 .contact .title {
-    font-size: 4rem; /* Tamanho do título */
+    font-size: 3rem; /* Tamanho do título */
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
     margin-bottom: 1rem; /* Espaçamento abaixo do título */
     color: var(--cor-verde-menta); /* Cor do título */
+    padding-bottom: 10px;
 }
 
 .contact p {
-    font-size: 2rem; /* Tamanho do parágrafo */
+    font-size: 1.7rem; /* Tamanho do parágrafo */
     margin-bottom: 2rem; /* Espaçamento abaixo do parágrafo */
     color: var(--cor-cinza); /* Cor do parágrafo */
+    padding-bottom: 20px;
 }
 
 .contact .button {
     background-color: var(--cor-verde-menta); /* Cor do botão */
     color: var(--cor-branca); /* Cor do texto do botão */
-    padding: 0.75rem 1.5rem; /* Espaçamento interno do botão */
+    padding: 1.65rem 3.5rem; /* Espaçamento interno do botão */
     border-radius: 5px; /* Cantos arredondados */
     text-decoration: none; /* Remove underline */
     transition: background-color 0.3s ease, transform 0.3s ease; /* Efeitos de transição */
-    font-size: 1.5rem; /* Tamanho da fonte do botão */
+    font-size: 2rem; /* Tamanho da fonte do botão */
 }
 
 .contact .button:hover {
@@ -515,9 +536,9 @@ section {
 }
 
 .contact .links {
-    flex: 1; /* Flexível */
-    padding-left: 2rem; /* Espaçamento à esquerda */
-    text-align: right; /* Alinha o texto à direita */
+    flex: 0.65; /* Flexível */
+    text-align: start;
+    margin-left: 25px;
 }
 
 .contact ul.grid {
@@ -529,14 +550,15 @@ section {
 .contact ul li {
     display: flex; /* Flexbox para itens da lista */
     align-items: center; /* Alinhamento vertical */
-    font-size: 1.2rem; /* Aumenta o tamanho da fonte dos itens */
-    margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
+    font-size: 1.65rem; /* Aumenta o tamanho da fonte dos itens */
+    margin-bottom: 1.7rem; /* Espaçamento abaixo dos itens */
+    gap: 10px;
 }
 
 .contact ul li i {
     margin-right: 0.5rem; /* Espaçamento à direita do ícone */
     color: var(--cor-verde-menta); /* Cor do ícone */
-    font-size: 1.5rem; /* Aumenta o tamanho do ícone */
+    font-size: 2.5rem; /* Aumenta o tamanho do ícone */
 }
 
 
