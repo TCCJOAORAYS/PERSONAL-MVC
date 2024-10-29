@@ -19,7 +19,7 @@
     <h1 class="frase">@Model.Descricao</h1>
     <h2 class="title">@Model.Nome</h2>
   </div>
-  <img src="@Model.Imagem" class="Freeman-Romberg">
+  <img src="@Model.Imagem" class="hidden Freeman-Romberg">
 </section>
 
 
@@ -28,7 +28,7 @@
 </section>
 
 
-<section class="informations">
+<section class="hidden informations">
   <p class="p2">
  @foreach (var item in Model.Info)
 {

@@ -8,7 +8,7 @@
 
 }
 
-<section id="home" class="home">
+<section id="home" class="hidden home">
     <div class="swiper home-slider">
 
         <div class="swiper-wrapper">
@@ -47,7 +47,7 @@
         </a>
     </div>
 
-    <div class="content">
+    <div class="hidden content">
         <span>Sobre Victor</span>
         <h3 class="title">Um novo dia, uma nova oportunidade de melhorar!</h3>
         <p>Olá! Eu sou o Victor Werner Oioli e vou te ajudar nesse processo de mudança de vida! Sou Personal
@@ -87,7 +87,7 @@
             {
                 @if (item.Id % 2 == 1)
                 {
-                    <div class="box">
+                    <div class="hidden box">
                         <div class="image">
                             <img src="@Html.DisplayFor(modelItem => item.ImagemAux)" alt="">
                         </div>
@@ -102,7 +102,7 @@
                 }
                 else
                 {
-                    <div class="box second">
+                    <div class="hidden box second">
                         <div class="image">
                             <img src="@Html.DisplayFor(modelItem => item.ImagemAux)" alt="">
                         </div>
@@ -142,7 +142,7 @@
         <h3>Experiências de quem passou por aqui</h3>
         <p>Quer saber o que dizem?</p>
     </div>
-    <div class="swiper review-slider">
+    <div class="hidden swiper review-slider">
 
         <div class="swiper-wrapper">
 
@@ -207,9 +207,9 @@
 </div>
 <!-- Seção de Contato -->
 <section class="contact">
-    <div class="container-grid">
+    <div class="hidden container-grid">
         <div class="text">
-            <h2 class="title">Entre em contato com a gente!</h2>
+            <h2 class="hidden title">Entre em contato com a gente!</h2>
             <p>Entre em contato direto com a nossa equipe, queremos tirar suas dúvidas, ouvir suas críticas e sugestões.</p>
             <a href="https://api.whatsapp.com/send?phone=+551699781951&text=Vamos agendar um horário!" target="_blank" class="button">
                 <i class="fab fa-whatsapp"></i> Entrar em contato
@@ -225,5 +225,7 @@
         </div>
     </div>
 </section>
+
+
 
 

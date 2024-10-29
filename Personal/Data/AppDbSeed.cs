@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 namespace Personal.Data;
 public class AppDbSeed
 {
- 
+
     public AppDbSeed(ModelBuilder builder)
     {
         // Adicionar dados iniciais ou configurar a entidade aqui
@@ -65,11 +65,25 @@ public class AppDbSeed
                 Icon = "https://raw.githubusercontent.com/TCCJOAORAYS/IMAGENS/main/img/icons/musculacaoicone.png",
                 Info = ["Determinar um programa de treinamento especifico de equilíbrio para reduzir quedas.", "Examinar os efeitos de exercícios de equilíbrio na propriocepção de idosos.", "Verificar o efeito de um programa de treinamento de equilíbrio, de curto e longo período, em idosos.", "Estudar a eficácia dos exercícios de equilíbrio, realizadas em casa."],
                 Tabela = "https://raw.githubusercontent.com/TCCJOAORAYS/IMAGENS/main/img/tabelas/3.png"
+            },
+            new Exercise()
+            {
+                Id = 5,
+                Nome = "Teste de agilidade e equilíbrio dinâmico",
+                NomeAux = "Agilidade E Equilíbrio Dinâmico",
+                Titulo = "Quais os objetivos dos testes?",
+                Descricao = "Instrumentos: cadeira com braços, fita métrica, 2 cones e cronômetro. Organização do teste: cadeira em local demarcado e local para os pés tocarem o solo. Dois cones posicionados a 1,50m para trás e 1,80m para cada lado (Figura). Posição do avaliado: sentado na cadeira com os pés (calcanhares) tocando o solo. Posição do avaliador: próximo ao avaliado.",
+                Tipo = "Terceiro Teste Rápido",
+                Imagem = "https://raw.githubusercontent.com/TCCJOAORAYS/IMAGENS/main/img/testes/equilibrio.png",
+                ImagemAux = "https://raw.githubusercontent.com/TCCJOAORAYS/IMAGENS/main/img/exercicios/massamuscular.jpg",
+                Icon = "https://raw.githubusercontent.com/TCCJOAORAYS/IMAGENS/main/img/icons/musculacaoicone.png",
+                Info = ["Determinar um programa de treinamento especifico de equilíbrio para reduzir quedas.", "Examinar os efeitos de exercícios de equilíbrio na propriocepção de idosos.", "Verificar o efeito de um programa de treinamento de equilíbrio, de curto e longo período, em idosos.", "Estudar a eficácia dos exercícios de equilíbrio, realizadas em casa."],
+                Tabela = "https://raw.githubusercontent.com/TCCJOAORAYS/IMAGENS/main/img/tabelas/3.png"
             }
         };
 
         builder.Entity<Exercise>().HasData(exercises);
-        
+
     }
 }
 
