@@ -330,6 +330,32 @@ section {
     padding: 1rem 0;
 }
 
+.features .carousel-inner {
+    height: 30rem; /* Ajuste a altura do carousel conforme necessário */
+}
+
+.features .carousel-item .box {
+    background: var(--cor-preto);
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Faz a caixa ocupar toda a altura do carousel */
+}
+
+.features .carousel-item .image {
+    height: 70%; /* Ajuste conforme desejado */
+}
+
+.features .carousel-item .content {
+    padding: 1rem; /* Ajuste o padding se necessário */
+    text-align: center;
+}
+
+.features .carousel-control-prev-icon,
+.features .carousel-control-next-icon {
+    background-color: var(--cor-verde-menta); /* Cor dos botões de controle */
+}
+
+
 .trainers .box {
     height: 10rem;
     overflow: hidden;

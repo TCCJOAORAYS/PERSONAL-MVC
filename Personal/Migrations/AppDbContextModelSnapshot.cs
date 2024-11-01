@@ -306,29 +306,27 @@ namespace Personal.Migrations
                         new
                         {
                             Id = 4,
-                            Descricao = "Instrumentos: cadeira com braços, fita métrica, 2 cones e cronômetro. Organização do teste: cadeira em local demarcado e local para os pés tocarem o solo. Dois cones posicionados a 1,50m para trás e 1,80m para cada lado (Figura). Posição do avaliado: sentado na cadeira com os pés (calcanhares) tocando o solo. Posição do avaliador: próximo ao avaliado.",
-                            Icon = "https://raw.githubusercontent.com/TCCJOAORAYS/IMAGENS/main/img/icons/musculacaoicone.png",
-                            Imagem = "https://raw.githubusercontent.com/TCCJOAORAYS/IMAGENS/main/img/testes/equilibrio.png",
-                            ImagemAux = "https://raw.githubusercontent.com/TCCJOAORAYS/IMAGENS/main/img/exercicios/massamuscular.jpg",
-                            Info = "[\"Determinar um programa de treinamento especifico de equil\\u00EDbrio para reduzir quedas.\",\"Examinar os efeitos de exerc\\u00EDcios de equil\\u00EDbrio na propriocep\\u00E7\\u00E3o de idosos.\",\"Verificar o efeito de um programa de treinamento de equil\\u00EDbrio, de curto e longo per\\u00EDodo, em idosos.\",\"Estudar a efic\\u00E1cia dos exerc\\u00EDcios de equil\\u00EDbrio, realizadas em casa.\"]",
-                            Nome = "Teste de agilidade e equilíbrio dinâmico",
+                            Descricao = "Caminhar de maneira normal entre os cones que formam a base do quadrado. Caminhe até o outro cone posicionado na diagonal, conseguindo passar pelos 4 cones e finalizando o percurso. Os testes devem ser realizados quatro vezes sendo uma como reconhecimento e as outras três válidas ,tentando fazer no menor tempo.",
+                            Icon = "https://raw.githubusercontent.com/TCCJOAORAYS/IMAGENS/main/img/icons/alongamentoicone.png",
+                            Imagem = "https://raw.githubusercontent.com/TCCJOAORAYS/IMAGENS/main/img/testes/deslocamento.png",
+                            ImagemAux = "https://raw.githubusercontent.com/TCCJOAORAYS/IMAGENS/main/img/exercicios/deslocamento.jpg",
+                            Info = "[\"Posicione os 4 cones em dist\\u00E2ncia de aproximadamente de 3 a 4 metros formando um quadrado.\"]",
+                            Nome = "Deslocamento em quadrado",
                             NomeAux = "Agilidade E Equilíbrio Dinâmico",
-                            Tabela = "https://raw.githubusercontent.com/TCCJOAORAYS/IMAGENS/main/img/tabelas/3.png",
-                            Tipo = "Terceiro Teste Rápido",
+                            Tipo = "Quarto Teste Rápido",
                             Titulo = "Quais os objetivos dos testes?"
                         },
                         new
                         {
                             Id = 5,
-                            Descricao = "Instrumentos: cadeira com braços, fita métrica, 2 cones e cronômetro. Organização do teste: cadeira em local demarcado e local para os pés tocarem o solo. Dois cones posicionados a 1,50m para trás e 1,80m para cada lado (Figura). Posição do avaliado: sentado na cadeira com os pés (calcanhares) tocando o solo. Posição do avaliador: próximo ao avaliado.",
-                            Icon = "https://raw.githubusercontent.com/TCCJOAORAYS/IMAGENS/main/img/icons/musculacaoicone.png",
-                            Imagem = "https://raw.githubusercontent.com/TCCJOAORAYS/IMAGENS/main/img/testes/equilibrio.png",
-                            ImagemAux = "https://raw.githubusercontent.com/TCCJOAORAYS/IMAGENS/main/img/exercicios/massamuscular.jpg",
-                            Info = "[\"Determinar um programa de treinamento especifico de equil\\u00EDbrio para reduzir quedas.\",\"Examinar os efeitos de exerc\\u00EDcios de equil\\u00EDbrio na propriocep\\u00E7\\u00E3o de idosos.\",\"Verificar o efeito de um programa de treinamento de equil\\u00EDbrio, de curto e longo per\\u00EDodo, em idosos.\",\"Estudar a efic\\u00E1cia dos exerc\\u00EDcios de equil\\u00EDbrio, realizadas em casa.\"]",
-                            Nome = "Teste de agilidade e equilíbrio dinâmico",
-                            NomeAux = "Agilidade E Equilíbrio Dinâmico",
-                            Tabela = "https://raw.githubusercontent.com/TCCJOAORAYS/IMAGENS/main/img/tabelas/3.png",
-                            Tipo = "Terceiro Teste Rápido",
+                            Descricao = "Organização do teste: cadeira em local demarcado e local para os pés tocarem o solo. Dois cones posicionados a 1,50m para trás e 1,80m para cada lado (Figura). Posição do avaliado: sentado na cadeira com os pés (calcanhares) tocando o solo. Posição do avaliador: próximo ao avaliado.",
+                            Icon = "https://raw.githubusercontent.com/TCCJOAORAYS/IMAGENS/main/img/icons/doricone.png",
+                            Imagem = "https://raw.githubusercontent.com/TCCJOAORAYS/IMAGENS/main/img/testes/agachamento.jpeg",
+                            ImagemAux = "https://raw.githubusercontent.com/TCCJOAORAYS/IMAGENS/main/img/exercicios/agachamentomulher.jpg",
+                            Info = "[\"Instrumentos: cadeira com bra\\u00E7os, fita m\\u00E9trica, 2 cones e cron\\u00F4metro.\"]",
+                            Nome = "Agachamento com cadeira",
+                            NomeAux = "Força e resistencia",
+                            Tipo = "Quinto Teste Rápido",
                             Titulo = "Quais os objetivos dos testes?"
                         });
                 });
