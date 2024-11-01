@@ -9,4 +9,3 @@ git config --global user.email tccjaoraysa@gmail.com
   dotnet ef migrations add {nomedoBanco} (se necessário).
   dotnet ef database update
   dotnet watch run
-  .
