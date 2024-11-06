@@ -230,6 +230,12 @@ section {
 }
 .about .content .box-container .box {
     flex: 1 1 20rem;
+    transition: transform 0.3s ease;
+    user-select: none; 
+}
+
+.about .content .box-container .box:hover {
+    transform: scale(1.05); 
 }
 
 .about .content .box-container .box h3 {
@@ -240,6 +246,12 @@ section {
 .about .content .box-container .box h3 i {
     padding-right: 1.5rem;
     color: var(--cor-verde-menta);
+}
+
+
+.about .content .box-container .box:hover i {
+    transform: rotate(360deg); 
+    transition: transform 0.5s ease; 
 }
 
 .image {
@@ -266,10 +278,12 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s ease;
 }
 
 .instagram-icon:hover {
     color: var(--cor-preto);
+    transform: scale(1.1);
 }
 
 /*Exercicios*/
@@ -680,7 +694,6 @@ section {
     color: var(--cor-branca);
     cursor: pointer;
     outline: none;
-
     border: 2px solid white;
     border-radius: 50%;
     transition-duration: 0.2s;
