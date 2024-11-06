@@ -310,11 +310,11 @@ namespace Personal.Migrations
                             Icon = "https://raw.githubusercontent.com/TCCJOAORAYS/IMAGENS/main/img/icons/alongamentoicone.png",
                             Imagem = "https://raw.githubusercontent.com/TCCJOAORAYS/IMAGENS/main/img/testes/deslocamento.png",
                             ImagemAux = "https://raw.githubusercontent.com/TCCJOAORAYS/IMAGENS/main/img/exercicios/deslocamento.jpg",
-                            Info = "[\"Posicione os 4 cones em dist\\u00E2ncia de aproximadamente de 3 a 4 metros formando um quadrado.\"]",
+                            Info = "[\"4 cones em dist\\u00E2ncia de aproximadamente de 3 a 4 metros formando um quadrado.\"]",
                             Nome = "Deslocamento em quadrado",
                             NomeAux = "Agilidade E Equilíbrio Dinâmico",
                             Tipo = "Quarto Teste Rápido",
-                            Titulo = "Quais os objetivos dos testes?"
+                            Titulo = "Equipamentos necessários"
                         },
                         new
                         {
