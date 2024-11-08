@@ -108,3 +108,40 @@ const myObserver = new IntersectionObserver((entries) => {
 const elements = document.querySelectorAll('.hidden')
 
 elements.forEach((element) => myObserver.observe(element))
+
+
+
+
+
+//*Slide Carousel*//
+
+document.addEventListener('DOMContentLoaded', function() {
+    const nextButton = document.querySelector('.next');
+    const prevButton = document.querySelector('.prev');
+    const carouselContainer = document.querySelector('.custom-carousel');  // Altere para a classe correta
+    const items = document.querySelectorAll('.carousel-item');
+    let index = 0;
+
+    // Função para atualizar a posição do carrossel
+    function updateCarousel() {
+        const itemWidth = items[0].offsetWidth;  // Largura de cada item
+        carouselContainer.style.transform = `translateX(-${index * itemWidth}px)`;
+    }
+
+    // Navegar para o próximo item
+    nextButton.addEventListener('click', function() {
+        const totalItems = items.length;
+        index = (index + 1) % totalItems;  // Vai para o próximo item, e volta ao começo se for o último
+        updateCarousel();
+    });
+
+    // Navegar para o item anterior
+    prevButton.addEventListener('click', function() {
+        const totalItems = items.length;
+        index = (index - 1 + totalItems) % totalItems;  // Vai para o anterior e volta para o último se for o primeiro
+        updateCarousel();
+    });
+
+    // Inicializa a posição do carrossel
+    updateCarousel();
+});

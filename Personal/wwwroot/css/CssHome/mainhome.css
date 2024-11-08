@@ -289,12 +289,9 @@ section {
 /*Exercicios*/
 
 .features .box-container {
-    display: grid;
-    /*Vai cria o auto-fit também tenta 
-    colocar quantas colunas der, expandindo os itens para caber no espaço disponível.
-    E com controle do tamanho mínimo e máximo dos itens.*/
-    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    display: flex;
     gap: 1.5rem;
+    transition: transform 0.5s ease;
 }
 .features .box-container .box {
     background: var(--cor-preto);
@@ -344,30 +341,99 @@ section {
     padding: 1rem 0;
 }
 
-.features .carousel-inner {
-    height: 30rem; /* Ajuste a altura do carousel conforme necessário */
+/* Container principal do carrossel */
+.features .custom-carousel {
+    position: relative;
+    display: flex;
+    overflow: hidden;
 }
 
+/* Container interno do carrossel */
+.features .carousel-inner {
+    height: 30rem; /* Ajuste a altura do carrossel conforme necessário */
+    display: flex;
+    transition: transform 0.5s ease; /* Transição suave para movimento */
+}
+
+/* Itens do carrossel */
+.features .carousel-item {
+    min-width: 30%; /* Definindo a largura para três itens visíveis no carrossel */
+    flex: 0 0 30%;
+    display: flex;
+}
+
+/* Estilo de cada caixa de conteúdo */
 .features .carousel-item .box {
     background: var(--cor-preto);
     display: flex;
     flex-direction: column;
-    height: 100%; /* Faz a caixa ocupar toda a altura do carousel */
+    height: 100%; /* Faz a caixa ocupar toda a altura do carrossel */
 }
 
-.features .carousel-item .image {
+/* Imagem dentro da caixa */
+.features .carousel-item .box .image {
     height: 70%; /* Ajuste conforme desejado */
+    overflow: hidden; /* Esconde o excesso de imagem */
+    width: 100%;
 }
 
-.features .carousel-item .content {
-    padding: 1rem; /* Ajuste o padding se necessário */
+/* Efeito de hover na imagem */
+.features .carousel-item .box .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Mantém a proporção da imagem preenchendo o contêiner */
+    transition: transform 0.3s ease; /* Transição suave para o efeito de hover */
+}
+
+.features .carousel-item .box:hover .image img {
+    transform: scale(1.1); /* Amplia a imagem ao passar o mouse */
+}
+
+/* Conteúdo textual dentro da caixa */
+.features .carousel-item .box .content {
+    padding: 1rem;
     text-align: center;
 }
 
-.features .carousel-control-prev-icon,
-.features .carousel-control-next-icon {
-    background-color: var(--cor-verde-menta); /* Cor dos botões de controle */
+.features .carousel-item .content h3 {
+    font-size: 2rem;
+    color: var(--cor-verde-menta);
 }
+
+.features .carousel-item .content p {
+    line-height: 2;
+    font-size: 1.5rem;
+    color: var(--cor-cinza);
+    padding: 1rem 0;
+}
+
+/* Imagem pequena dentro do conteúdo com filtro invertido */
+.features .carousel-item .content img {
+    height: 9rem;
+    margin-bottom: 1rem;
+    filter: invert(1); /* Inverte as cores */
+}
+
+/* Botões de controle do carrossel */
+.features .controls {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.features .controls .prev,
+.features .controls .next {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--cor-verde-menta);
+    font-size: 2rem;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
 
 
 
