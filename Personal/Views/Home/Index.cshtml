@@ -81,32 +81,34 @@
 <section id="features" class="features">
     <h1 class="heading"><span>Testes Rápidos</span></h1>
     <div class="box-container custom-carousel">
-        @if (Model != null && Model.Any())
-        {
-            var items = Model.ToList();
-            foreach (var item in items)
+        <div class="carousel-inner">
+            @if (Model != null && Model.Any())
             {
-                <div class="hidden box carousel-item">
-                    <div class="box boxcars">
-                        <div class="image">
-                            <img src="@Html.DisplayFor(modelItem => item.ImagemAux)" alt="Imagem do Exercício">
-                        </div>
-                        <div class="content">
-                            <img src="@Html.DisplayFor(modelItem => item.Icon)" alt="Ícone do Exercício">
-                            <h3>@Html.DisplayFor(modelItem => item.NomeAux)</h3>
-                            <p>@Html.DisplayFor(modelItem => item.Tipo)</p>
-                            <a asp-action="Exercise" asp-route-id='@item.Id' class="btn">Saiba mais</a>
+                var items = Model.ToList();
+                foreach (var item in items)
+                {
+                    <div class="box carousel-item">
+                        <div class="box boxcars">
+                            <div class="image">
+                                <img src="@Html.DisplayFor(modelItem => item.ImagemAux)" alt="Imagem do Exercício">
+                            </div>
+                            <div class="content">
+                                <img src="@Html.DisplayFor(modelItem => item.Icon)" alt="Ícone do Exercício">
+                                <h3>@Html.DisplayFor(modelItem => item.NomeAux)</h3>
+                                <p>@Html.DisplayFor(modelItem => item.Tipo)</p>
+                                <a asp-action="Exercise" asp-route-id='@item.Id' class="btn">Saiba mais</a>
+                            </div>
                         </div>
                     </div>
+                }
+            }
+            else
+            {
+                <div style="color: white;">
+                    <p>nenhum exercício disponível</p>
                 </div>
             }
-        }
-        else
-        {
-            <div style="color: white;">
-                <p>nenhum exercício disponível</p>
-            </div>
-        }
+        </div>
     </div>
     <div class="controls">
         <button class="prev">❮</button>
@@ -199,8 +201,10 @@
     <div class="hidden container-grid">
         <div class="text">
             <h2 class="hidden title">Entre em contato com a gente!</h2>
-            <p>Entre em contato direto com a nossa equipe, queremos tirar suas dúvidas, ouvir suas críticas e sugestões.</p>
-            <a href="https://api.whatsapp.com/send?phone=+551699781951&text=Vamos agendar um horário!" target="_blank" class="button">
+            <p>Entre em contato direto com a nossa equipe, queremos tirar suas dúvidas, ouvir suas críticas e sugestões.
+            </p>
+            <a href="https://api.whatsapp.com/send?phone=+551699781951&text=Vamos agendar um horário!" target="_blank"
+                class="button">
                 <i class="fab fa-whatsapp"></i> Entrar em contato
             </a>
         </div>
@@ -214,9 +218,3 @@
         </div>
     </div>
 </section>
-
-
-
-
-
-

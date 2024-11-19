@@ -114,34 +114,46 @@ elements.forEach((element) => myObserver.observe(element))
 
 
 //*Slide Carousel*//
-
-document.addEventListener('DOMContentLoaded', function() {
-    const nextButton = document.querySelector('.next');
+document.addEventListener("DOMContentLoaded", function() {
+    const carouselInner = document.querySelector('.carousel-inner');
     const prevButton = document.querySelector('.prev');
-    const carouselContainer = document.querySelector('.custom-carousel');  // Altere para a classe correta
+    const nextButton = document.querySelector('.next');
     const items = document.querySelectorAll('.carousel-item');
-    let index = 0;
+    const totalItems = items.length;
+    let currentIndex = 0;
 
-    // Função para atualizar a posição do carrossel
-    function updateCarousel() {
-        const itemWidth = items[0].offsetWidth;  // Largura de cada item
-        carouselContainer.style.transform = `translateX(-${index * itemWidth}px)`;
+    // Função para mover o carrossel
+    function moveCarousel() {
+        // Calcular a largura do item e do espaçamento entre eles
+        const itemWidth = items[0].offsetWidth; // Largura do item (considera o gap)
+        const gap = parseInt(window.getComputedStyle(items[0]).marginRight); // Espaçamento entre os itens
+        const offset = -(currentIndex * (itemWidth + gap)); // Movimenta o carrossel de acordo com o índice
+        carouselInner.style.transform = `translateX(${offset}px)`;
     }
 
-    // Navegar para o próximo item
+    // Função para mover para o próximo item
     nextButton.addEventListener('click', function() {
-        const totalItems = items.length;
-        index = (index + 1) % totalItems;  // Vai para o próximo item, e volta ao começo se for o último
-        updateCarousel();
+        if (currentIndex < totalItems - 1) {
+            currentIndex++;
+        } else {
+            // Se estiver no último item, volta para o primeiro
+            currentIndex = 0;
+        }
+        moveCarousel();
     });
 
-    // Navegar para o item anterior
+    // Função para mover para o item anterior
     prevButton.addEventListener('click', function() {
-        const totalItems = items.length;
-        index = (index - 1 + totalItems) % totalItems;  // Vai para o anterior e volta para o último se for o primeiro
-        updateCarousel();
+        if (currentIndex > 0) {
+            currentIndex--;
+        } else {
+            // Se estiver no primeiro item, vai para o último
+            currentIndex = totalItems - 1;
+        }
+        moveCarousel();
     });
 
-    // Inicializa a posição do carrossel
-    updateCarousel();
+    // Inicializa o carrossel na primeira posição
+    moveCarousel();
 });
+
