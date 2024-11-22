@@ -365,7 +365,7 @@ section {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    transform: translateY(-50%);
+    transform: translateY(-850%);
     z-index: 2;
 }
 
@@ -374,10 +374,24 @@ section {
     background-color: rgba(0, 0, 0, 0.5);
     color: var(--cor-verde-menta);
     font-size: 2rem;
-    padding: 0.5rem;
+    padding: 1rem;
     border: none;
     cursor: pointer;
-    border-radius: 50%;
+    border-radius: 30%;
+    border: 2px solid #fff;
+    transition: all 0.3s ease; /* Transição suave */
+    position: relative;
+    z-index: 1; /* Garante que o botão ficará acima de outros elementos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra sutil para profundidade */
+}
+
+/* Efeito hover */
+.features .controls .prev:hover,
+.features .controls .next:hover {
+    background-color: var(--cor-verde-menta); /* Cor de fundo muda no hover */
+    color: #fff; /* Muda a cor do texto */
+    transform: scale(1.1); /* Aumenta o botão para dar destaque */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Sombra mais forte */
 }
 
 .features .carousel-item:last-child {
