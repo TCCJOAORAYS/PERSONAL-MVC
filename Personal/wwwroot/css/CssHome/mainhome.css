@@ -102,25 +102,46 @@ section {
     width: 100px;
     height:100px;
 }
+/* Estilo dos itens de navegação */
 .header .navbar a {
     display: inline-block;
     padding: 1.5rem 2rem;
     font-size: 1.7rem;
     color: var(--cor-branca);
     transition: 0.5s ease-in-out;
+    position: relative;  
 }
+
+/* Estilo ao passar o mouse sobre o item de navegação */
 .header .navbar a:hover {
-    background: var(--cor-verde-menta);
-    transition: 0.5s ease-in-out;
-    transform: scale(1.1);
+    color: #fff; 
+    text-decoration: none; 
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 15px rgba(255, 255, 255, 0.6);
 }
+
+/* Pseudo-elemento para a linha (sublinhado animado) */
+.header .navbar a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;  
+    left: 0;  
+    width: 0%;  
+    height: 2px; 
+    background-color: var(--cor-verde-menta); 
+    transition: width 0.3s ease-in-out;  
+}
+
+/* Quando o hover ocorre, a linha cresce da esquerda para a direita */
+.header .navbar a:hover::after {
+    width: 100%;  
+}
+
 #menu-btn {
     font-size: 3rem;
     color: var(--cor-branca);
     cursor: pointer;
     display: none;
 }
-
 
 
 /*Slider*/
@@ -288,7 +309,6 @@ section {
 
 /* Container do carrossel */
 
-
 .features .custom-carousel {
     position: relative;
     display: flex;
@@ -299,16 +319,16 @@ section {
 .features .carousel-inner {
     display: flex;
     transition: transform 0.5s ease;
-    gap: 2rem; /* Espaçamento entre os itens */
+    gap: 2rem; 
 }
 
 
 /* Itens do carrossel */
 .features .carousel-item {
-    flex: 0 0 auto; /* Evita que o item cresça ou encolha */
-    width: calc(33.33% - 2rem); /* Ajusta a largura para caber 3 itens com gap de 2rem */
+    flex: 0 0 auto; 
+    width: calc(33.33% - 2rem); 
     display: flex;
-    margin-right: 2rem; /* Espaçamento lateral entre os itens */
+    margin-right: 2rem;
 }
 
 /* Caixa de cada item */
@@ -321,19 +341,19 @@ section {
 
 /* Imagem */
 .features .carousel-item .box .image {
-    height: 70%;  /* Altura fixa da imagem principal */
-    width: 100%;  /* Largura ocupando toda a caixa */
+    height: 70%;  
+    width: 100%;  
     overflow: hidden;
 }
 .features .carousel-item .box .image img {
     width: 100%;
-    height: 100%;  /* Garante que a imagem ocupe toda a altura e largura do contêiner */
-    object-fit: cover;  /* Faz a imagem preencher o contêiner mantendo a proporção */
-    transition: transform 0.3s ease;  /* Transição suave no hover */
+    height: 100%;  
+    object-fit: cover;  
+    transition: transform 0.3s ease;  
 }
 
 .features .carousel-item .box:hover .image img {
-    transform: scale(1.1); /* Efeito de zoom na imagem ao passar o mouse */
+    transform: scale(1.1); 
 }
 
 /* Conteúdo dentro do box */
@@ -343,11 +363,11 @@ section {
 }
 
 .features .carousel-item .content img {
-    height: 9rem;  /* Altura fixa para os ícones */
-    width: 9rem;   /* Largura fixa para os ícones */
+    height: 9rem;  
+    width: 9rem;  
     margin-bottom: 1rem;
     filter: invert(1);
-    object-fit: cover;  /* Garantir que a imagem ocupe o espaço sem distorção */
+    object-fit: cover; 
 }
 
 .features .carousel-item .box .content h3 {
@@ -379,36 +399,36 @@ section {
     cursor: pointer;
     border-radius: 30%;
     border: 2px solid #fff;
-    transition: all 0.3s ease; /* Transição suave */
+    transition: all 0.3s ease;
     position: relative;
-    z-index: 1; /* Garante que o botão ficará acima de outros elementos */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra sutil para profundidade */
+    z-index: 1; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
 /* Efeito hover */
 .features .controls .prev:hover,
 .features .controls .next:hover {
-    background-color: var(--cor-verde-menta); /* Cor de fundo muda no hover */
-    color: #fff; /* Muda a cor do texto */
-    transform: scale(1.1); /* Aumenta o botão para dar destaque */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Sombra mais forte */
+    background-color: var(--cor-verde-menta);
+    color: #fff;
+    transform: scale(1.1); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
 
 .features .carousel-item:last-child {
-    margin-right: 0; /* Remove o margin-right do último item */
+    margin-right: 0; 
 }
 
 
 
 @media (max-width: 1024px) {
     .features .carousel-item {
-        min-width: 50%; /* Exibe 2 itens por vez em telas menores */
+        min-width: 50%; 
     }
 }
 
 @media (max-width: 768px) {
     .features .carousel-item {
-        min-width: 100%; /* Exibe 1 item por vez em telas pequenas */
+        min-width: 100%; 
     }
 }
 
@@ -587,84 +607,85 @@ section {
 /*Contato*/
 
 .contact {
-    background-color: var(--cor-preto); /* Cor de fundo */
-    color: var(--cor-branca); /* Cor do texto */
-    padding: 10rem 9%; /* Espaçamento interno */
-    text-align: center; /* Centraliza o texto */
+    background-color: var(--cor-preto);
+    color: var(--cor-branca); 
+    padding: 10rem 9%; 
+    text-align: center; 
 }
 
 .contact .container-grid {
-    display: flex; /* Flexbox para layout */
-    justify-content: space-between; /* Espaço entre os itens */
-    align-items: center; /* Alinhamento vertical */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
     gap: 75px;
-    max-width: 1200px; /* Largura máxima */
-    margin: 0 auto; /* Centraliza a seção */
+    max-width: 1200px; 
+    margin: 0 auto; 
 }
 
 .contact .text {
-    flex: 1; /* Flexível */
+    flex: 1; 
     text-align: start;
-    padding-right: 2rem; /* Espaçamento à direita */
+    padding-right: 2rem; 
 }
 
 .contact .title {
-    font-size: 3rem; /* Tamanho do título */
+    font-size: 3rem; 
     font-weight: 700;
     font-family: "Poppins", sans-serif;
     font-style: normal;
-    margin-bottom: 1rem; /* Espaçamento abaixo do título */
-    color: var(--cor-verde-menta); /* Cor do título */
+    margin-bottom: 1rem; 
+    color: var(--cor-verde-menta); 
     padding-bottom: 10px;
 }
 
 .contact p {
-    font-size: 1.7rem; /* Tamanho do parágrafo */
-    margin-bottom: 2rem; /* Espaçamento abaixo do parágrafo */
-    color: var(--cor-cinza); /* Cor do parágrafo */
+    font-size: 1.7rem; 
+    margin-bottom: 2rem; 
+    color: var(--cor-cinza); 
     padding-bottom: 20px;
 }
 
 .contact .button {
-    background-color: var(--cor-verde-menta); /* Cor do botão */
-    color: var(--cor-branca); /* Cor do texto do botão */
-    padding: 1.65rem 3.5rem; /* Espaçamento interno do botão */
-    border-radius: 5px; /* Cantos arredondados */
-    text-decoration: none; /* Remove underline */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Efeitos de transição */
-    font-size: 2rem; /* Tamanho da fonte do botão */
+    background-color: var(--cor-verde-menta); 
+    color: var(--cor-branca); 
+    padding: 1.65rem 3.5rem; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    font-size: 2rem; 
 }
 
 .contact .button:hover {
-    background-color: var(--cor-verde-bosta); /* Cor ao passar o mouse */
-    transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+    background-color: var(--cor-verde-bosta); 
+    transform: scale(1.05); 
 }
 
 .contact .links {
-    flex: 0.65; /* Flexível */
+    flex: 0.65; 
     text-align: start;
     margin-left: 25px;
 }
 
 .contact ul.grid {
-    list-style: none; /* Remove marcadores da lista */
-    padding: 0; /* Remove preenchimento */
-    font-size: 1.2rem; /* Aumenta o tamanho da fonte */
+    list-style: none; 
+    padding: 0; 
+    font-size: 1.2rem; 
 }
 
 .contact ul li {
-    display: flex; /* Flexbox para itens da lista */
-    align-items: center; /* Alinhamento vertical */
-    font-size: 1.65rem; /* Aumenta o tamanho da fonte dos itens */
-    margin-bottom: 1.7rem; /* Espaçamento abaixo dos itens */
+    display: flex; 
+    align-items: center; 
+    font-size: 1.65rem; 
+    margin-bottom: 1.7rem; 
     gap: 10px;
 }
 
 .contact ul li i {
-    margin-right: 0.5rem; /* Espaçamento à direita do ícone */
-    color: var(--cor-verde-menta); /* Cor do ícone */
-    font-size: 2.5rem; /* Aumenta o tamanho do ícone */
+    margin-right: 0.5rem; 
+    color: var(--cor-verde-menta); 
+    font-size: 2.5rem; 
 }
+
 
 /*Footer*/
 
@@ -698,8 +719,8 @@ section {
 }
 
 .footer .box-container .box p i {
-    padding-right: .5rem; /* Espaço entre o ícone e o texto */
-    color: var(--cor-verde-menta); /* Cor do ícone */
+    padding-right: .5rem; 
+    color: var(--cor-verde-menta); 
 }
 
 .footer .box-container .box .share {

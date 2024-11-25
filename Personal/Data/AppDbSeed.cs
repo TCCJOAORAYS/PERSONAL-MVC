@@ -70,7 +70,7 @@ public class AppDbSeed
                 Id = 5,
                 Nome = "Agachamento com cadeira",
                 NomeAux = "Força e resistencia",
-                Titulo = "Quais os objetivos dos testes?",
+                Titulo = "Recursos Necessários",
                 Descricao = "Organização do teste: cadeira em local demarcado e local para os pés tocarem o solo. Dois cones posicionados a 1,50m para trás e 1,80m para cada lado (Figura). Posição do avaliado: sentado na cadeira com os pés (calcanhares) tocando o solo. Posição do avaliador: próximo ao avaliado.",
                 Tipo = "Quinto Teste Rápido",
                 Imagem = "https://raw.githubusercontent.com/TCCJOAORAYS/IMAGENS/main/img/testes/agachamento.jpeg",

@@ -12,7 +12,7 @@ using Personal.Data;
 namespace Personal.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241122131447_InitialCreate")]
+    [Migration("20241125104742_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
