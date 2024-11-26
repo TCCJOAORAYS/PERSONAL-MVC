@@ -12,7 +12,7 @@ using Personal.Data;
 namespace Personal.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241125104742_InitialCreate")]
+    [Migration("20241126113913_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -330,7 +330,7 @@ namespace Personal.Migrations
                             Nome = "Agachamento com cadeira",
                             NomeAux = "Força e resistencia",
                             Tipo = "Quinto Teste Rápido",
-                            Titulo = "Quais os objetivos dos testes?"
+                            Titulo = "Recursos Necessários"
                         });
                 });
 

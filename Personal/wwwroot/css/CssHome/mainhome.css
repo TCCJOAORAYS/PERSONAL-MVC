@@ -10,18 +10,30 @@ html::-webkit-scrollbar {
     width: 1rem;
 }
 
+html::-webkit-scrollbar {
+    width: 12px; 
+}
+
 html::-webkit-scrollbar-track {
-    /*o que fica abaixo da barra*/
-    background: #000;
+    background: var(--cor-preto);
+    border-radius: 10px; 
 }
 
 html::-webkit-scrollbar-thumb {
-    /*cor da barra*/
     background: var(--cor-verde-menta);
+    border-radius: 10px;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
+html::-webkit-scrollbar-thumb:hover {
+    background: var(--cor-branca);
+    box-shadow: 0 0 5px var(--cor-branca); 
+}
+
+
+
 body {
-    background: #000;
+    background: var(--cor-preto);
 }
 
 section {
@@ -78,7 +90,7 @@ section {
     justify-content: space-between;
     padding: 0 9%;
     z-index: 10000;
-    background: var(--cor-preto);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0) 100%);
 }
 .header .logo {
     font-weight: bolder;

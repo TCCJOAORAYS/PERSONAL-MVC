@@ -327,7 +327,7 @@ namespace Personal.Migrations
                             Nome = "Agachamento com cadeira",
                             NomeAux = "Força e resistencia",
                             Tipo = "Quinto Teste Rápido",
-                            Titulo = "Quais os objetivos dos testes?"
+                            Titulo = "Recursos Necessários"
                         });
                 });
 
