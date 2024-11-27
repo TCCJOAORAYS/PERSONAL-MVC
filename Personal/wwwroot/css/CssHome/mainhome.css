@@ -430,6 +430,14 @@ section {
     margin-right: 0; 
 }
 
+.features .controls .prev {
+    left: -20px;  /* Aumente esse valor para distanciar mais da esquerda */
+}
+
+.features .controls .next {
+    right: -20px;  /* Aumente esse valor para distanciar mais da direita */
+}
+
 
 
 @media (max-width: 1024px) {
@@ -443,7 +451,32 @@ section {
         min-width: 100%; 
     }
 }
+ 
+/*Botão Saiba Mais*/
 
+/* Botão Saiba Mais */
+.features .carousel-item .content .btn {
+    background: linear-gradient(45deg, var(--cor-verde-menta), var(--cor-verde-bosta));
+    color: var(--cor-branca); 
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border: 2px solid transparent; 
+    border-radius: 15px; 
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    position: relative;
+    background-clip: padding-box; 
+}
+
+.features .carousel-item .content .btn:hover {
+    background: var(--cor-branca); 
+    color: var(--cor-preto); 
+    transform: translateY(-8px);
+    border: 2px solid var(--cor-verde-menta); 
+}
 
 
 .trainers .box {
