@@ -12,7 +12,7 @@ using Personal.Data;
 namespace Personal.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241127132130_InitialCreate")]
+    [Migration("20241129135143_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -281,7 +281,7 @@ namespace Personal.Migrations
                         new
                         {
                             Id = 2,
-                            Descricao = "Para realizar o teste como descrito na versão original, o Testado é cronometrado enquanto se levanta de uma cadeira (aproximadamente 46cm), caminha em uma linha reta de 3metros de distância (em um ritmo confortável e seguro), vira, caminha de volta e senta-se sobre a cadeira novamente.",
+                            Descricao = "Para realizar o teste como descrito na versão original, o Testado é cronometrado enquanto se levanta de uma cadeira (aproximadamente 46cm), caminha em uma linha reta de 3 metros de distância (em um ritmo confortável e seguro), vira, caminha de volta e senta-se sobre a cadeira novamente.",
                             Icon = "https://raw.githubusercontent.com/TCCJOAORAYS/IMAGENS/main/img/icons/doricone.png",
                             Imagem = "https://raw.githubusercontent.com/TCCJOAORAYS/IMAGENS/main/img/testes/tug.png",
                             ImagemAux = "https://raw.githubusercontent.com/TCCJOAORAYS/IMAGENS/main/img/exercicios/doreslocais.jpg",
